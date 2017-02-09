@@ -11,7 +11,7 @@ html {
   font-family: var(--font-primary);
 }
 
-/*****HEADINGS*****/
+/* ****HEADINGS**** */
 
 h1 {
   color: var(--color-primary);
@@ -22,28 +22,28 @@ h1 {
 
 h2 {
   color: var(--color-grey);
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* ^Banner text */
 
 h3 {
   color: var(--color-grey);
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* ^main subtitle */
 
 h4 {
   color: var(--color-grey);
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* ^Next subtitle in form */
 
 h5 {
   color: var(--color-grey);
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* ^not confirmed */
@@ -55,7 +55,7 @@ h6 {
 
 /* ^form boxes subtitle */
 
-/*****LISTS*****/
+/* ****LISTS**** */
 
 ul {
   color: var(--color-grey);
@@ -70,68 +70,68 @@ dl {
   font-weight: 600;
 }
 
-/*****LINKS*****/
+/* ****LINKS**** */
 
 a {
   color: var(--color-primary);
 }
 
-/*****BLOCKQUOTES*****/
+/* ****BLOCKQUOTES**** */
 
 blockquote {
   color: var(--color-secondary);
 }
 
 cite {
-
+  color: var(--color-secondary);
 }
 
-/*****EMPHASIS & EDITS*****/
+/* ****EMPHASIS & EDITS**** */
 
 em {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 strong {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 del {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 ins {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 abbr {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 dfn {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 i {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 b {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 mark {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 q {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 s {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
 
 u {
-  color: var(--color-grey)
+  color: var(--color-grey);
 }
