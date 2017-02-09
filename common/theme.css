@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #4abdac;
-  --color-secondary: #fc4a1a;
+  --color-primary: #fc4a1a;
+  --color-secondary: #4abdac;
   --color-grey: #95989a;
 
   --font-primary: "Hind Vadodara", sans-serif;
@@ -9,4 +9,129 @@
 
 html {
   font-family: var(--font-primary);
+}
+
+/*****HEADINGS*****/
+
+h1 {
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+}
+
+/* ^logo */
+
+h2 {
+  color: var(--color-grey);
+  font-weight: 700;
+}
+
+/* ^Banner text */
+
+h3 {
+  color: var(--color-grey);
+  font-weight: 700;
+}
+
+/* ^main subtitle */
+
+h4 {
+  color: var(--color-grey);
+  font-weight: 700;
+}
+
+/* ^Next subtitle in form */
+
+h5 {
+  color: var(--color-grey);
+  font-weight: 700;
+}
+
+/* ^not confirmed */
+
+h6 {
+  color: var(--color-grey);
+  font-weight: 600;
+}
+
+/* ^form boxes subtitle */
+
+/*****LISTS*****/
+
+ul {
+  color: var(--color-grey);
+}
+
+ol {
+  color: var(--color-grey);
+}
+
+dl {
+  color: var(--color-grey);
+  font-weight: 600;
+}
+
+/*****LINKS*****/
+
+a {
+  color: var(--color-primary);
+}
+
+/*****BLOCKQUOTES*****/
+
+blockquote {
+  color: var(--color-secondary);
+}
+
+cite {
+
+}
+
+/*****EMPHASIS & EDITS*****/
+
+em {
+  color: var(--color-grey)
+}
+
+strong {
+  color: var(--color-grey)
+}
+
+del {
+  color: var(--color-grey)
+}
+
+ins {
+  color: var(--color-grey)
+}
+
+abbr {
+  color: var(--color-grey)
+}
+
+dfn {
+  color: var(--color-grey)
+}
+
+i {
+  color: var(--color-grey)
+}
+
+b {
+  color: var(--color-grey)
+}
+
+mark {
+  color: var(--color-grey)
+}
+
+q {
+  color: var(--color-grey)
+}
+
+s {
+  color: var(--color-grey)
+}
+
+u {
+  color: var(--color-grey)
 }
