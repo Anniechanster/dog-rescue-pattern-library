@@ -1,0 +1,12 @@
+:root {
+  --color-primary: #4ABDAC;
+  --color-secondary: #FC4A1A;
+  --color-grey: #95989A;
+
+  --font-primary: "Hind Vadodara", sans-serif;
+  --font-secondary: "Paytone One", sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
