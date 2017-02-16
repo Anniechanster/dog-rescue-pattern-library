@@ -1,13 +1,12 @@
 .btn {
   background-color: var(--color-primary);
-  border-color: var(--color-primary);
+  border: none;
   color: #fff;
 }
 
 .btn:hover {
   background-color: #fff;
   color: var(--color-primary);
-  border-color: var(--color-primary);
 }
 
 .login {
