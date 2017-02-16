@@ -1,6 +1,6 @@
 .btn {
   background-color: var(--color-primary);
-  border: none;
+  border-color: var(--color-primary);
   color: #fff;
 
   transition: all 200ms ease-in;
@@ -9,6 +9,7 @@
 .btn:hover {
   background-color: #fff;
   color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .login {
