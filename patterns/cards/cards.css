@@ -6,9 +6,3 @@
 .card-text {
   color: var(--color-grey);
 }
-
-.img-adjust {
-  display: block;
-  height: 100%;
-  width: auto;
-}
