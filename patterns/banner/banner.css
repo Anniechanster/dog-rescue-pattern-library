@@ -1,0 +1,39 @@
+.banner {
+  position: relative;
+  max-height: 24rem;
+  overflow: hidden;
+}
+
+.banner-content {
+  color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h2 {
+  color: white;
+}
+
+.slogan-content {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.slogan {
+  position: relative;
+}
+
+@media only screen and (min-width: 35em) {
+
+  .slogan-content {
+    bottom: 0;
+    position: absolute;
+
+
+
+    background-color: transparent;
+
+  }
+
+}
