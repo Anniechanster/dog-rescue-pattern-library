@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Call-to-action Banner</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="../buttons/buttons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,600,700|Paytone+One" rel="stylesheet">
+  <link href="forms.css" rel="stylesheet">
+</head>
+<body>
+
+  <form class="grid max-length island" method="post" novalidate>
+
+    <div class="unit [ xs-1 s-1 m-1 l-1 ] push island text-center gutter error-message error-message-highlighted" role="alert" aria-live="assertive">
+      <h3 class="icon-label-banner push-0 mega">
+        <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label-banner">There are items that require your attention</span>
+      </h3>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+      <label for="first-name">First Name</label>
+      <input id="first-name" required aria-describedby="first-name-error">
+      <p class="error-message milli island-1-4 push-0" id="name-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide a first name</span>
+      </p>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+      <label for="last-name">Last Name</label>
+      <input id="last-name" required aria-describedby="name-error">
+      <p class="error-message milli island-1-4 push-0" id="last-name-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide a last name</span>
+      </p>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+      <label for="tel">Telephone Number</label>
+      <input type="tel" id="tel" required aria-describedby="tel-error">
+      <p class="error-message milli island-1-4 push-0" id="tel-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide a phne number</span>
+      </p>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+      <label for="age">Age</label>
+      <input id="age" required aria-describedby="age-error">
+      <p class="error-message milli island-1-4 push-0" id="age-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide an age</span>
+      </p>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
+      <label for="email">Email</label>
+      <input type="email" id="email" required aria-describedby="email-error" placeholder="example@example.com">
+      <p class="error-message milli island-1-4 push-0" id="email-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide a properly formatted email address</span>
+      </p>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
+      <label for="url">Employer <em class="flag-optional milli normal">(optional)</em></label>
+      <input type="url" id="url">
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
+      <label for="details" class="push-1-8">Why do you want a rescue dog?</label>
+      <textarea id="details" name="message"></textarea>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
+      <label for="housing">Housing Type</label>
+      <select id="housing" name="housing">
+        <option>Condo</option>
+        <option>Apartment</option>
+        <option>Detached House</option>
+        <option>Semi-detached House</option>
+        <option>Townhouse</option>
+        <option>Duplex/Triplex</option>
+      </select>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
+      <label for="people">How many people reside in the house?</label>
+      <input type="number" id="people" required aria-describedby="number-error">
+      <p class="error-message milli island-1-4 push-0" id="people-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide an number</span>
+      </p>
+    </div>
+
+    <div class="unit [ xs-1-2 s-1-2 m-1-3 l-1-3 ] push gutter pad-t-1-2">
+      <input type="radio" id="yes" required aria-describedby="yes-error">
+      <label for="yes">Yes</label>
+    </div>
+
+    <div class="unit [ xs-1-2 s-1-2 m-1-3 l-1-3 ] push gutter pad-t-1-2">
+      <input type="radio" id="no" required aria-describedby="no-error">
+      <label for="no">No</label>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter pad-t-1-2">
+      <input type="checkbox" id="agree" required aria-describedby="agree-error">
+      <label for="agree">I agree to the above statements</label>
+      <p class="error-message milli island-1-4 push-0" id="agree-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please read and agree to the terms and conditions</span>
+      </p>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter pad-t-1-2">
+      <button class="btn login" type="submit">Submit</button>
+    </div>
+
+  </form>
+
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+
+</body>
+</html>
