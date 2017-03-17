@@ -17,12 +17,12 @@ nav ul {
 }
 
 nav a {
-  padding: .8em .8em;
+  padding: .8em;
   display: block;
 
   color: var(--color-grey);
   text-decoration: none;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
   text-align: center;
 }
 
@@ -49,13 +49,5 @@ nav a:hover {
     text-align: left;
     margin-left: 2.5rem;
   }
-
-}
-
-  @media only screen and (min-width: 60em) {
-
-  }
-
-  @media only screen and (min-width: 90em) {
 
 }
