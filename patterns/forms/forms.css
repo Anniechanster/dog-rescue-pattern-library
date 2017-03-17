@@ -24,6 +24,11 @@
   display: block;
 }
 
+.icon,
 .icon-label-banner {
   color: #fff;
+}
+
+.i-red {
+  color: var(--color-primary);
 }
