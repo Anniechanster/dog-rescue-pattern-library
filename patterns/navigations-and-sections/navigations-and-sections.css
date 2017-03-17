@@ -29,6 +29,8 @@ nav a {
 nav a:hover {
   background-color: var(--color-grey);
   color: #fff;
+
+  transition: all 200ms ease-in;
 }
 
 @media only screen and (min-width: 38em) {
@@ -50,4 +52,23 @@ nav a:hover {
     margin-left: 2.5rem;
   }
 
+}
+
+/*page numbers*/
+
+.numbers {
+  float: right;
+  color: var(--color-secondary);
+}
+
+.number-btn a {
+  padding: 7px;
+  text-decoration: none;
+  color: var(--color-grey);
+  display: block;
+}
+
+.number-btn a:hover {
+  transition: all 200ms ease-in;
+  color: #fff;
 }
