@@ -6,3 +6,7 @@
 .card-text {
   color: var(--color-grey);
 }
+
+h4 {
+  color: var(--color-primary);
+}
