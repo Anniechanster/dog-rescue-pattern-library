@@ -1,1 +1,25 @@
+footer {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
 
+h5,
+.copyright {
+  color: #fff;
+}
+
+.copyright {
+  text-align: right;
+}
+
+.icon {
+  text-align: right;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .icon {
+    float: right;
+  }
+
+}
