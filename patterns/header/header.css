@@ -53,22 +53,3 @@ nav a:hover {
   }
 
 }
-
-/* page numbers */
-
-.numbers {
-  float: right;
-  color: var(--color-secondary);
-}
-
-.number-btn a {
-  padding: 7px;
-  text-decoration: none;
-  color: var(--color-grey);
-  display: block;
-}
-
-.number-btn a:hover {
-  transition: all 200ms ease-in;
-  color: #fff;
-}
