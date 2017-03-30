@@ -1,3 +1,5 @@
-form {
+label,
+select,
+option {
   color: var(--color-grey);
 }

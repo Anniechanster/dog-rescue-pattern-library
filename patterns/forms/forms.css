@@ -32,3 +32,9 @@
 .i-red {
   color: var(--color-primary);
 }
+
+label,
+select,
+option {
+  color: var(--color-grey);
+}
