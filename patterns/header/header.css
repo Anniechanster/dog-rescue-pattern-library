@@ -1,0 +1,74 @@
+h1 {
+  letter-spacing: .05em;
+  display: inline-block;
+}
+
+nav {
+  font-family: var(--font-secondary);
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  border-top: 1.5px solid;
+  border-bottom: 1.5px solid;
+}
+
+nav a {
+  padding: .8em;
+  display: block;
+
+  color: var(--color-grey);
+  text-decoration: none;
+  letter-spacing: .5px;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: var(--color-grey);
+  color: #fff;
+
+  transition: all 200ms ease-in;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .btn {
+    float: right;
+  }
+
+  .logo {
+    text-align: left;
+  }
+
+  nav {
+    text-align: left;
+  }
+
+  nav a {
+    text-align: left;
+    margin-left: 2.5rem;
+  }
+
+}
+
+/* page numbers */
+
+.numbers {
+  float: right;
+  color: var(--color-secondary);
+}
+
+.number-btn a {
+  padding: 7px;
+  text-decoration: none;
+  color: var(--color-grey);
+  display: block;
+}
+
+.number-btn a:hover {
+  transition: all 200ms ease-in;
+  color: #fff;
+}
