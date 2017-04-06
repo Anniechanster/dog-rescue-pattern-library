@@ -38,3 +38,11 @@ select,
 option {
   color: var(--color-grey);
 }
+
+fieldset {
+  border: none;
+}
+
+legend {
+  color: var(--color-grey);
+}

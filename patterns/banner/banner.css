@@ -29,6 +29,7 @@ h2 {
   .slogan-content {
     bottom: 0;
     position: absolute;
+    text-align: left;
 
     background-color: transparent;
 

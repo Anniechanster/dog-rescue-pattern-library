@@ -5,6 +5,7 @@ basic-card:
   width: 500
 
 icon-card:
+  backgroundColor: "#f2f2f2"
   desc: |
     The icon card is generally used for calls-to-action on the homepage or highlights on inside pages.
   width: 300
