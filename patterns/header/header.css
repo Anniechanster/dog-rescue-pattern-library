@@ -35,8 +35,8 @@ nav a:hover {
 
 @media only screen and (min-width: 38em) {
 
-  .btn-head {
-    float: right;
+  .btn-group {
+    text-align: right;
   }
 
   .logo {
