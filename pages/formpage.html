@@ -45,14 +45,14 @@
     </div>
   </nav>
 
-  <div class="max-length-no-center text-left gutter-2">
+  <div class="max-length-no-center text-left gutter-2 pad-t-1-2">
     <h2 class="yotta push-1-2">Application Form</h2>
     <p class="pform">Please fill in as much information as possible in each tab. If the application is not complete, we cannot consider you for one of our dogs. Adopting a rescued dog is a serious endeavor and should not be done as a "spur of the moment" action.</p>
   </div>
 
   <form class="grid island" method="post" novalidate>
 
-    <div class="unit [ xs-1 s-1 m-1 l-1 ] push island text-center gutter error-message error-message-highlighted" role="alert" aria-live="assertive">
+    <div class="unit [ xs-1 s-1 m-1 l-1 ] push island text-center gutter error-message error-message-highlighted" role="alert" aria-live="assertive" tabindex="-1">
       <h3 class="icon-label-banner push-0 mega">
         <i class="icon1 icon i-32"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
         <span class="icon-label-banner">There are items that require your attention</span>
@@ -229,7 +229,44 @@
           <label for="details" class="push-1-8">Why do you want a rescue dog?</label>
           <textarea id="details" name="message"></textarea>
         </div>
+
+        <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
+          <label for="details" class="push-1-8">If you have any pets, please list them</label>
+          <textarea id="details" name="message"></textarea>
+        </div>
       </fieldset>
+
+      <fieldset class="w-1">
+        <legend class="unit [ xs-1 s-1 m-1 l-1 ] gutter tera push-1-2">Contract</legend>
+
+      <fieldset class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block">
+        <legend class="not-bold">Do you realize that at often times the complete history  of a rescue dog may not be known and you may encounter some behavioural problems?</legend>
+        <input type="radio" name="agreement2" id="yes-agreement2" required aria-describedby="yes-agreement2-error">
+        <label for="yes-agreement2">Yes</label>
+        <input type="radio" name="agreement2" id="no-agreement2">
+        <label for="no-agreement2" class="gutter-1-2">No</label>
+        <p class="error-message milli island-1-4 push-0" id="agree-error">
+          <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+          <span class="icon-label">Please read and agree to the terms and conditions</span>
+        </p>
+      </fieldset>
+
+      <fieldset class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block">
+        <legend class="not-bold">Are you willing to work with us on correct these problems?</legend>
+        <input type="radio" name="agreement3" id="yes-agreement3">
+        <label for="yes-agreement3">Yes</label>
+        <input type="radio" name="agreement3" id="no-agreement3">
+        <label for="no-agreement3" class="gutter-1-2">No</label>
+      </fieldset>
+    </fieldset>
+
+
+
+
+
+
+
+
 
       <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter pad-t-1-2">
         <input type="checkbox" id="agree" required aria-describedby="agree-error">
@@ -249,6 +286,14 @@
   </form>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+  <script>
+    var message = document.querySelector (".error-message-highlighted");
+    var form = document.querySelector ("form");
+    form.addEventListener ("submit", functional(e){}
+      if (!this,checkValidity()) {      message.focus();
+    }
+    });
+  </script>
 
   <footer class="grid pad-t pad-b gutter-2 micro pad-t-2">
     <div class="unit xs-1 s-1 m-1 l-1">
