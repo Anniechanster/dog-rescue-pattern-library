@@ -162,7 +162,7 @@
         <input id="city" required aria-describedby="city-error">
         <p class="error-message milli island-1-4 push-0" id="city-error">
           <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
-          <span class="icon-label">Please provide an city</span>
+          <span class="icon-label">Please provide a city</span>
         </p>
       </div>
 
@@ -171,18 +171,18 @@
         <input id="prov" required aria-describedby="prov-error">
         <p class="error-message milli island-1-4 push-0" id="prov-error">
           <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
-          <span class="icon-label">Please provide an province or state</span>
+          <span class="icon-label">Please provide a province or state</span>
         </p>
       </div>
 
       <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
-        <label for="url">Employer <em class="flag-optional milli normal">(optional)</em></label>
-        <input type="url" id="url">
+        <label for="employer">Employer <em class="flag-optional milli normal">(optional)</em></label>
+        <input type="url" id="employer">
       </div>
 
       <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
-        <label for="url">Job Title <em class="flag-optional milli normal">(optional)</em></label>
-        <input type="url" id="url">
+        <label for="job">Job Title <em class="flag-optional milli normal">(optional)</em></label>
+        <input type="url" id="job">
       </div>
     </fieldset>
 
@@ -229,8 +229,8 @@
       </div>
 
       <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
-        <label for="details" class="push-1-8">Describe your hobbies</label>
-        <textarea id="details" name="message"></textarea>
+        <label for="hobbies" class="push-1-8">Describe your hobbies</label>
+        <textarea id="hobbies" name="message"></textarea>
       </div>
 
       <fieldset class="unit [ xs-1-2 s-1 m-1-2 l-1-2 ] push gutter pad-t-1-2 inline-block">
@@ -246,13 +246,13 @@
         <legend class="unit [ xs-1 s-1 m-1 l-1 ] gutter tera push-1-2">Pet Information</legend>
 
         <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
-          <label for="details" class="push-1-8">Why do you want a rescue dog?</label>
-          <textarea id="details" name="message"></textarea>
+          <label for="whydetail" class="push-1-8">Why do you want a rescue dog?</label>
+          <textarea id="whydetail" name="message"></textarea>
         </div>
 
         <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
-          <label for="details" class="push-1-8">If you have any pets, please list them</label>
-          <textarea id="details" name="message"></textarea>
+          <label for="list" class="push-1-8">If you have any pets, please list them</label>
+          <textarea id="list" name="message"></textarea>
         </div>
       </fieldset>
 
@@ -312,16 +312,6 @@
 
   </form>
 
-  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
-  <script>
-    var message = document.querySelector (".error-message-highlighted");
-    var form = document.querySelector ("form");
-    form.addEventListener ("submit", functional(e){}
-      if (!this,checkValidity()) {      message.focus();
-    }
-    });
-  </script>
-
   <footer class="grid pad-t pad-b gutter-2 micro pad-t-2">
     <div class="unit xs-1 s-1 m-1 l-1">
       <h5 class="micro push-1-4">Contact information</h5>
@@ -346,6 +336,16 @@
       </div>
     </div>
   </footer>
+  
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+  <script>
+    var message = document.querySelector (".error-message-highlighted");
+    var form = document.querySelector ("form");
+    form.addEventListener ("submit", functional(e){}
+      if (!this,checkValidity()) {      message.focus();
+    }
+    });
+  </script>
 
 </body>
 </html>
