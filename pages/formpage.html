@@ -12,6 +12,7 @@
   <link href="../patterns/header/header.css" rel="stylesheet">
   <link href="../patterns/footer/footer-section.css" rel="stylesheet">
   <link href="../patterns/forms/forms.css" rel="stylesheet">
+  <link href="../patterns/information-section/information.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,600,700|Paytone+One" rel="stylesheet">
 </head>
 <body>
@@ -50,7 +51,7 @@
     <p class="pform">Please fill in as much information as possible in each tab. If the application is not complete, we cannot consider you for one of our dogs. Adopting a rescued dog is a serious endeavor and should not be done as a "spur of the moment" action.</p>
   </div>
 
-  <form class="grid island" method="post" novalidate>
+  <form class="grid island push-r" method="post" novalidate>
 
     <div class="unit [ xs-1 s-1 m-1 l-1 ] push island text-center gutter error-message error-message-highlighted" role="alert" aria-live="assertive" tabindex="-1">
       <h3 class="icon-label-banner push-0 mega">
@@ -260,7 +261,7 @@
       <legend class="unit [ xs-1 s-1 m-1 l-1 ] gutter tera push-1-2">Contract</legend>
 
       <fieldset class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block">
-        <legend class="not-bold milli">Do you realize that at often times the complete history of a rescue dog may not be known and you may encounter some behavioural problems?</legend>
+        <legend class="not-bold milli max-length-no-center">Do you realize that at often times the complete history of a rescue dog may not be known and you may encounter some behavioural problems?</legend>
         <input type="radio" name="agreement2" id="yes-agreement2" required aria-describedby="yes-agreement2-error">
         <label for="yes-agreement2">Yes</label>
         <input type="radio" name="agreement2" id="no-agreement2">
@@ -283,10 +284,18 @@
         </p>
       </fieldset>
 
-      <h6 class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block push-0">References</h6>
-      <p class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block milli">Please provide the name, relationship to you, phone number and email of three personal references (maximum of one family member) as well as your veterinary reference. If you have no previous veterinary history, please include a fourth reference (not a family member).</p>
+      <div class="max-length-no-center">
+        <h6 class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block push-0">References</h6>
+        <p class="unit [ xs-1-2 s-1 m-1 l-1 ] push-1-2 gutter pad-t-1-2 inline-block milli">Please provide the name, relationship to you, phone number and email of three personal references (maximum of one family member) as well as your veterinary reference.</p>
+        <p class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter inline-block micro">* If you have no previous veterinary history, please include a fourth reference (not a family member)</p>
+      </div>
 
       <fieldset class="w-1">
+
+        <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-1-2 push gutter">
+          <h2 class="tera">#1</h2>
+        </div>
+
         <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
           <label for="name1">Name</label>
           <input id="name1" required aria-describedby="name1-error">
@@ -298,7 +307,7 @@
 
         <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
           <label for="relation">Relationship</label>
-          <input id="relation" required aria-describedby="name-error">
+          <input id="relation" required aria-describedby="relation-error">
           <p class="error-message milli island-1-4 push-0" id="relation-error">
             <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
             <span class="icon-label">Please provide the relationship</span>
@@ -307,7 +316,7 @@
 
         <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
           <label for="phone1">Phone Number</label>
-          <input id="phone1" required aria-describedby="tel-error">
+          <input id="phone1" required aria-describedby="phone1-error">
           <p class="error-message milli island-1-4 push-0" id="phone1-error">
             <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
             <span class="icon-label">Please provide a phone number</span>
@@ -322,6 +331,167 @@
             <span class="icon-label">Please provide an address</span>
           </p>
         </div>
+
+        <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-2 push gutter">
+          <h2 class="tera">#2</h2>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="name2">Name</label>
+          <input id="name2" required aria-describedby="name2-error">
+          <p class="error-message milli island-1-4 push-0" id="name2-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a first and last name</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="relation2">Relationship</label>
+          <input id="relation2" required aria-describedby="relation2-error">
+          <p class="error-message milli island-1-4 push-0" id="relation2-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the relationship</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="phone2">Phone Number</label>
+          <input id="phone2" required aria-describedby="phone2-error">
+          <p class="error-message milli island-1-4 push-0" id="phone2-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a phone number</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="address2">Address</label>
+          <input id="address2" required aria-describedby="address2-error">
+          <p class="error-message milli island-1-4 push-0" id="address2-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide an address</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-2 push gutter">
+          <h2 class="tera">#3</h2>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="name3">Name</label>
+          <input id="name3" required aria-describedby="name3-error">
+          <p class="error-message milli island-1-4 push-0" id="name3-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a first and last name</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="relation3">Relationship</label>
+          <input id="relation3" required aria-describedby="relation3-error">
+          <p class="error-message milli island-1-4 push-0" id="relation3-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the relationship</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="phone3">Phone Number</label>
+          <input id="phone3" required aria-describedby="phone3-error">
+          <p class="error-message milli island-1-4 push-0" id="phone3-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a phone number</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="address3">Address</label>
+          <input id="address3" required aria-describedby="address3-error">
+          <p class="error-message milli island-1-4 push-0" id="address3-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide an address</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-2 push gutter">
+          <h2 class="tera">#4</h2>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="name4">Name</label>
+          <input id="name4" required aria-describedby="name4-error">
+          <p class="error-message milli island-1-4 push-0" id="name4-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a first and last name</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="relation4">Relationship</label>
+          <input id="relation4" required aria-describedby="relation4-error">
+          <p class="error-message milli island-1-4 push-0" id="relation4-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the relationship</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="phone4">Phone Number</label>
+          <input id="phone4" required aria-describedby="phone4-error">
+          <p class="error-message milli island-1-4 push-0" id="phone4-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a phone number</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="address4">Address</label>
+          <input id="address4" required aria-describedby="address4-error">
+          <p class="error-message milli island-1-4 push-0" id="address4-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide an address</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-2 push gutter">
+          <h2 class="tera">Vet</h2>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="name5">Name</label>
+          <input id="name5" required aria-describedby="name5-error">
+          <p class="error-message milli island-1-4 push-0" id="name5-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a first and last name</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="relation5">Relationship</label>
+          <input id="relation5" required aria-describedby="relation5-error">
+          <p class="error-message milli island-1-4 push-0" id="relation5-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the relationship</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="phone5">Phone Number</label>
+          <input id="phone5" required aria-describedby="phone5-error">
+          <p class="error-message milli island-1-4 push-0" id="phone5-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a phone number</span>
+          </p>
+        </div>
+
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="address5">Address</label>
+          <input id="address5" required aria-describedby="address5-error">
+          <p class="error-message milli island-1-4 push-0" id="address5-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide an address</span>
+          </p>
+        </div>
+
       </fieldset>
 
       <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter pad-t-1-2">
@@ -367,15 +537,7 @@
   </footer>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
-  <script>
-    var message = document.querySelector(".error-message-highlighted");
-    var form = document.querySelector("form");
-    form.addEventListener("submit", functional(e){}
-      if (!this,checkValidity()) {
-      message.focus();
-    }
-    });
-  </script>
 
 </body>
+
 </html>
