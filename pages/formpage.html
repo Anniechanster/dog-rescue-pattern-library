@@ -107,7 +107,16 @@
         <input type="tel" id="tel" required aria-describedby="tel-error">
         <p class="error-message milli island-1-4 push-0" id="tel-error">
           <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
-          <span class="icon-label">Please provide a phne number</span>
+          <span class="icon-label">Please provide a home phone number</span>
+        </p>
+      </div>
+
+      <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+        <label for="cel">Cellphone Number</label>
+        <input type="cel" id="cel" required aria-describedby="cel-error">
+        <p class="error-message milli island-1-4 push-0" id="cel-error">
+          <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a cellphone number</span>
         </p>
       </div>
 
@@ -119,6 +128,16 @@
           <span class="icon-label">Please provide an age</span>
         </p>
       </div>
+
+      <fieldset class="unit [ xs-1-2 s-1 m-1-2 l-1-2 ] push gutter pad-t-1-2 inline-block">
+        <legend class="not-bold">Gender</legend>
+        <input type="radio" name="gender" id="gender-male">
+        <label for="gender-male">M</label>
+        <input type="radio" name="gender" id="gender-female">
+        <label for="gender-female" class="gutter-1-2">F</label>
+        <input type="radio" name="gender" id="gender-other">
+        <label for="gender-other" class="">Other</label>
+      </fieldset>
 
       <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
         <label for="email">Email</label>
@@ -173,12 +192,12 @@
       <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
         <label for="housing">Housing Type</label>
         <select id="housing" name="housing">
-          <option>Condo</option>
           <option>Apartment</option>
+          <option>Condo</option>
           <option>Detached House</option>
+          <option>Duplex/Triplex</option>
           <option>Semi-detached</option>
           <option>Townhouse</option>
-          <option>Duplex/Triplex</option>
         </select>
       </div>
 
@@ -240,24 +259,32 @@
         <legend class="unit [ xs-1 s-1 m-1 l-1 ] gutter tera push-1-2">Contract</legend>
 
       <fieldset class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block">
-        <legend class="not-bold">Do you realize that at often times the complete history  of a rescue dog may not be known and you may encounter some behavioural problems?</legend>
+        <legend class="not-bold milli">Do you realize that at often times the complete history  of a rescue dog may not be known and you may encounter some behavioural problems?</legend>
         <input type="radio" name="agreement2" id="yes-agreement2" required aria-describedby="yes-agreement2-error">
         <label for="yes-agreement2">Yes</label>
         <input type="radio" name="agreement2" id="no-agreement2">
         <label for="no-agreement2" class="gutter-1-2">No</label>
-        <p class="error-message milli island-1-4 push-0" id="agree-error">
+        <p class="error-message milli island-1-4 push-0" id="yes-agreement2-error">
           <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
           <span class="icon-label">Please read and agree to the terms and conditions</span>
         </p>
       </fieldset>
 
       <fieldset class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block">
-        <legend class="not-bold">Are you willing to work with us on correct these problems?</legend>
-        <input type="radio" name="agreement3" id="yes-agreement3">
+        <legend class="not-bold milli">Are you willing to work with us on correcting these problems?</legend>
+        <input type="radio" name="agreement3" id="yes-agreement3" required aria-describedby="yes-agreement3-error">
         <label for="yes-agreement3">Yes</label>
         <input type="radio" name="agreement3" id="no-agreement3">
         <label for="no-agreement3" class="gutter-1-2">No</label>
+        <p class="error-message milli island-1-4 push-0" id="yes-agreement3-error">
+          <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+          <span class="icon-label">Please read and agree to the terms and conditions</span>
+        </p>
       </fieldset>
+
+      <h6 class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block push-0">References</h6>
+      <p class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block milli">Please provide the name, relationship to you, phone number and email of three personal references (maximum of one family member) as well as your veterinary reference. If you have no previous veterinary history, please include a fourth reference (not a family member).</p>
+
     </fieldset>
 
 
