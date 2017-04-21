@@ -242,25 +242,25 @@
       </fieldset>
     </fieldset>
 
-      <fieldset class="w-1">
-        <legend class="unit [ xs-1 s-1 m-1 l-1 ] gutter tera push-1-2">Pet Information</legend>
+    <fieldset class="w-1">
+      <legend class="unit [ xs-1 s-1 m-1 l-1 ] gutter tera push-1-2">Pet Information</legend>
 
-        <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
-          <label for="whydetail" class="push-1-8">Why do you want a rescue dog?</label>
-          <textarea id="whydetail" name="message"></textarea>
-        </div>
+      <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
+        <label for="whydetail" class="push-1-8">Why do you want a rescue dog?</label>
+        <textarea id="whydetail" name="message"></textarea>
+      </div>
 
-        <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
-          <label for="list" class="push-1-8">If you have any pets, please list them</label>
-          <textarea id="list" name="message"></textarea>
-        </div>
-      </fieldset>
+      <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter">
+        <label for="list" class="push-1-8">If you have any pets, please list them</label>
+        <textarea id="list" name="message"></textarea>
+      </div>
+    </fieldset>
 
-      <fieldset class="w-1">
-        <legend class="unit [ xs-1 s-1 m-1 l-1 ] gutter tera push-1-2">Contract</legend>
+    <fieldset class="w-1">
+      <legend class="unit [ xs-1 s-1 m-1 l-1 ] gutter tera push-1-2">Contract</legend>
 
       <fieldset class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block">
-        <legend class="not-bold milli">Do you realize that at often times the complete history  of a rescue dog may not be known and you may encounter some behavioural problems?</legend>
+        <legend class="not-bold milli">Do you realize that at often times the complete history of a rescue dog may not be known and you may encounter some behavioural problems?</legend>
         <input type="radio" name="agreement2" id="yes-agreement2" required aria-describedby="yes-agreement2-error">
         <label for="yes-agreement2">Yes</label>
         <input type="radio" name="agreement2" id="no-agreement2">
@@ -286,14 +286,43 @@
       <h6 class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block push-0">References</h6>
       <p class="unit [ xs-1-2 s-1 m-1 l-1 ] push gutter pad-t-1-2 inline-block milli">Please provide the name, relationship to you, phone number and email of three personal references (maximum of one family member) as well as your veterinary reference. If you have no previous veterinary history, please include a fourth reference (not a family member).</p>
 
+      <fieldset class="w-1">
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="name1">Name</label>
+          <input id="name1" required aria-describedby="name1-error">
+          <p class="error-message milli island-1-4 push-0" id="name1-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a first and last name</span>
+          </p>
+        </div>
 
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="relation">Relationship</label>
+          <input id="relation" required aria-describedby="name-error">
+          <p class="error-message milli island-1-4 push-0" id="relation-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the relationship</span>
+          </p>
+        </div>
 
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="phone1">Phone Number</label>
+          <input id="phone1" required aria-describedby="tel-error">
+          <p class="error-message milli island-1-4 push-0" id="phone1-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a phone number</span>
+          </p>
+        </div>
 
-
-
-
-
-
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] push gutter">
+          <label for="address1">Address</label>
+          <input id="address1" required aria-describedby="address1-error">
+          <p class="error-message milli island-1-4 push-0" id="address1-error">
+            <i class="icon i-16 i-red"><svg><use xlink:href="../../images/icons-2.svg#error" /></svg></i>
+            <span class="icon-label">Please provide an address</span>
+          </p>
+        </div>
+      </fieldset>
 
       <div class="unit [ xs-1 s-1 m-1 l-1 ] push gutter pad-t-1-2">
         <input type="checkbox" id="agree" required aria-describedby="agree-error">
@@ -336,13 +365,14 @@
       </div>
     </div>
   </footer>
-  
+
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
   <script>
-    var message = document.querySelector (".error-message-highlighted");
-    var form = document.querySelector ("form");
-    form.addEventListener ("submit", functional(e){}
-      if (!this,checkValidity()) {      message.focus();
+    var message = document.querySelector(".error-message-highlighted");
+    var form = document.querySelector("form");
+    form.addEventListener("submit", functional(e){}
+      if (!this,checkValidity()) {
+      message.focus();
     }
     });
   </script>
