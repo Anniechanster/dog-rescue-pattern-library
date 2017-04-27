@@ -45,10 +45,6 @@ nav #current {
 
 @media only screen and (min-width: 38em) {
 
-  .btn {
-    text-align: right;
-  }
-
   .logo {
     text-align: left;
   }

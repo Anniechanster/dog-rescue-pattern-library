@@ -6,10 +6,10 @@
   border-bottom: 1px solid var(--color-primary);
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 60em) {
 
   .max-length-no-center {
-    margin-right: 8rem;
+    margin-right: 10rem;
   }
 
 }

@@ -2,10 +2,18 @@
   color: var(--color-grey);
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 60em) {
 
   .max-length-no-center {
-    margin-right: 8rem;
+    padding-right: 9rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .max-length-no-center {
+    padding-right: 15rem;
   }
 
 }
