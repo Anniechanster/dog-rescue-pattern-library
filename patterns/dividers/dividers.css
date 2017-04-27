@@ -2,6 +2,11 @@
   color: var(--color-grey);
 }
 
+.line-separator {
+  height: -2px;
+  border-bottom: 1px solid var(--color-primary);
+}
+
 @media only screen and (min-width: 38em) {
 
   .max-length-no-center {
