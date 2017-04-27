@@ -38,6 +38,11 @@ nav a:focus {
   color: #fff;
 }
 
+nav #current {
+  background-color: var(--color-grey);
+  color: #fff;
+}
+
 @media only screen and (min-width: 38em) {
 
   .btn {
@@ -74,6 +79,11 @@ nav a:focus {
 }
 
 .number-btn a:hover {
+  transition: all 200ms ease-in;
+  color: #fff;
+}
+
+.number-btn a:focus {
   transition: all 200ms ease-in;
   color: #fff;
 }
