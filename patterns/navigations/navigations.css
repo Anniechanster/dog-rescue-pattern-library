@@ -33,6 +33,11 @@ nav a:hover {
   transition: all 200ms ease-in;
 }
 
+nav a:focus {
+  background-color: var(--color-grey);
+  color: #fff;
+}
+
 @media only screen and (min-width: 38em) {
 
   .btn {
