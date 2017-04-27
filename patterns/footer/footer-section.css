@@ -15,3 +15,7 @@ h5,
 .icon {
   text-align: right;
 }
+
+.iconbtn {
+  color: var(--color-secondary);
+}
