@@ -26,3 +26,21 @@
 .subscribe:hover {
   color: var(--color-secondary);
 }
+
+.subscribe:focus {
+  background-color: #fff;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.login:focus {
+  background-color: #fff;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn:focus {
+  background-color: #fff;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
