@@ -24,6 +24,10 @@ h2 {
   position: relative;
 }
 
+.btncontent {
+  text-align: left;
+}
+
 @media only screen and (min-width: 35em) {
 
   .slogan-content {

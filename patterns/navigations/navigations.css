@@ -46,7 +46,7 @@ nav #current {
 @media only screen and (min-width: 38em) {
 
   .btn {
-    float: right;
+    text-align: right;
   }
 
   .logo {
