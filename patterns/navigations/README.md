@@ -7,3 +7,7 @@ page navigation: |
 ---
 
 Navigations help users access the site content with ease.
+
+The main navigation makes users navigate the site easily. It goes directly to the page they click on. It should always be horizontal on big screens when possible.
+
+Page navigation lets the users go through different sections or pages of content provided.
